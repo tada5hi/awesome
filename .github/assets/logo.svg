@@ -1,0 +1,41 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="aw-title">
+    <title id="aw-title">awesome logo: a lens scans an index of packages and settles on the one that fits</title>
+
+    <defs>
+        <linearGradient id="aw-tile" x1="24" y1="24" x2="232" y2="232" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#8B5CF6" stop-opacity="0.16"/>
+            <stop offset="1" stop-color="#14B8A6" stop-opacity="0.16"/>
+        </linearGradient>
+        <linearGradient id="aw-edge" x1="24" y1="24" x2="232" y2="232" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#8B5CF6"/>
+            <stop offset="1" stop-color="#14B8A6"/>
+        </linearGradient>
+    </defs>
+
+    <!-- rounded app-icon tile -->
+    <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#aw-tile)"/>
+    <rect x="8.75" y="8.75" width="238.5" height="238.5" rx="55.25" stroke="url(#aw-edge)" stroke-opacity="0.35" stroke-width="1.5"/>
+
+    <!-- the index: one row per package -->
+    <g>
+        <rect x="48" y="66" width="28" height="28" rx="8" fill="#8B5CF6"/>
+        <rect x="88" y="75" width="104" height="10" rx="5" fill="#8B5CF6" fill-opacity="0.35"/>
+    </g>
+    <g>
+        <rect x="48" y="114" width="28" height="28" rx="8" fill="#0EA5E9"/>
+        <rect x="88" y="123" width="104" height="10" rx="5" fill="#0EA5E9" fill-opacity="0.35">
+            <animate attributeName="fill-opacity" values="0.35;0.35;1" keyTimes="0;0.8;1" dur="3s" repeatCount="1" fill="freeze"/>
+        </rect>
+    </g>
+    <g>
+        <rect x="48" y="162" width="28" height="28" rx="8" fill="#14B8A6"/>
+        <rect x="88" y="171" width="104" height="10" rx="5" fill="#14B8A6" fill-opacity="0.35"/>
+    </g>
+
+    <!-- the lens: scans down the list, comes back up and settles on the match -->
+    <g>
+        <animateTransform attributeName="transform" type="translate" values="0 -48; 0 48; 0 0" keyTimes="0;0.55;1" dur="3s" repeatCount="1" fill="freeze"/>
+        <circle cx="150" cy="128" r="30" fill="#FFFFFF" fill-opacity="0.12" stroke="url(#aw-edge)" stroke-width="8"/>
+        <path d="M172 150 L198 176" stroke="url(#aw-edge)" stroke-width="12" stroke-linecap="round"/>
+    </g>
+</svg>
