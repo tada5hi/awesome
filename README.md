@@ -17,10 +17,36 @@ Includes the [authup](https://github.com/authup) and [routup](https://github.com
 
 ---
 
-<!--
-Entry format (one line per repository, parsed by tooling, keep it strict):
+<!-- package-list
+Read by the query-package-list and refresh-package-list skills (https://github.com/tada5hi/skills).
+Entry format, one line per repository, keep it strict:
 - [name](https://github.com/owner/repo) `npm: pkg-a, pkg-b` – Short description ending with a period.
-Install markers: `npm: …`, `pypi: …`, `action: owner/repo`, `plugin: owner/repo`. Monorepos list the packages a consumer installs, not every internal one.
+Install markers: npm, pypi, action, plugin. Monorepos list the packages a consumer installs, not every internal one.
+
+owners: tada5hi, authup, routup
+exclude:
+- tada5hi/typescript-swagger: superseded by tada5hi/trapi
+- tada5hi/docker-scan: superseded by tada5hi/docken
+- tada5hi/monorepo-publish-action: superseded by tada5hi/monoship
+- tada5hi/tada5hi: profile README
+- tada5hi/typeorm-extension-test-esm: test fixture
+- authup/documentation: docs site
+- authup/helm: deployment
+- authup/vue2: legacy backport
+- routup/templates: starter templates
+- tada5hi/awesome: this list
+- @authup/*-console: console app bundles
+- @authup/*-kit: internal toolkits, pulled in by the listed packages
+- @authup/*-theme: pulled in by @authup/client-web-kit
+- @authup/server-config: internal
+- @authup/errors: internal
+- @authup/kit: internal
+- @authup/i18n: internal
+- @authup/specs: internal
+- @authup/server-adapter-socket-io: listed under authup/adapters
+- @trapi/core: internal
+- @vuecs/*: listed packages cover the entry points; components install on demand
+- @tada5hi/eslint-config-*: replaced by @tada5hi/eslint-config
 -->
 
 ## Contents
